@@ -1,0 +1,76 @@
+header {
+    width: 100vw;
+    padding: 12px 12px 12px 12px;
+    display: block;
+    align-items: unset;
+    justify-content: unset;
+    transition: 0.4s;
+}
+
+.acto2 {
+    background-color: rgba(128, 128, 128, 0.582);
+}
+
+.nav {
+    top: -1000px;
+    height: 0px;
+    width: 100%;
+    flex-direction: column;
+    align-items: unset;
+    justify-content: unset;
+    margin-top: 50px;
+    transition: 0.5s;
+}
+
+.acto1 {
+    top: 0 !important;
+    height: auto !important;
+}
+
+.item {
+    padding: 20px 0px 0px 0px;
+    display: block;
+    width: 100%;
+    margin-right: unset;
+}
+
+.item a {
+    display: block;
+    text-align: center;
+}
+
+.bars {
+    display: block;
+    position: absolute;
+    top: 17px;
+    right: 28px;
+    float: right;
+    cursor: pointer;
+}
+
+.bars img {
+    filter: invert(1);
+    width: 29px;
+}
+
+
+/* BODY */
+
+#moon_txt {
+    right: -500px;
+    font-size: 4.5em;
+}
+
+.sec {
+    padding: 75px 40px;
+}
+
+.sec h1 {
+    font-size: 36px;
+    font-weight: 500;
+    padding: 0px 0px 15px 10px;
+}
+
+.sec p {
+    font-size: 16px;
+}

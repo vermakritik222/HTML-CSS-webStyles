@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(kara-eads-L7EwHkq1B2s-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.bar {
+  display: flex;
+  height: 20hv;
+}
+
+.bar ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.bar ul li {
+  margin: 10px;
+  position: relative;
+}
+
+.bar ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+  margin: 10px;
+}
+
+.bar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.bar ul li:hover::after {
+  width: 100%;
+}
+
+section {
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  color: white;
+  text-decoration: none;
+  padding: 12px 36px;
+  margin: 10px 38px;
+  border: 2px solid #009688;
+  border-radius: 50px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  outline: none;
+  text-transform: uppercase;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  background: rgba(0 179 179);
+  border-radius: 50px;
+  height: 100%;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.btn:hover {
+  border: 2px solid transparent;
+}

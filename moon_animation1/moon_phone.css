@@ -1,0 +1,22 @@
+/* #header {
+    display: none !important;
+} */
+
+#moon_txt {
+    right: -500px;
+    font-size: 4.5em;
+}
+
+.sec {
+    padding: 75px 40px;
+}
+
+.sec h1 {
+    font-size: 36px;
+    font-weight: 500;
+    padding: 0px 0px 15px 10px;
+}
+
+.sec p {
+    font-size: 16px;
+}

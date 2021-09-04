@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('wp6296513-brz-desktop-night-photography-wallpapers.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* ye kiya krta h pta nahi*/
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('wp6296513-brz-desktop-night-photography-wallpapers.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-attachment: fixed; */
+}
+
+section .box:nth-child(1) {
+    filter: blur(18px);
+}
+
+section .box:nth-child(2) {
+    clip-path: circle(150px at var(--x) var(--y));
+}
+
+section .box h1 {
+    position: absolute;
+    color: #fff;
+    font-size: 18em;
+    transform: translate(calc( var(--x)/25), calc( var(--y)/25));
+}
+
+.circle {
+    position: absolute;
+    top: -150px;
+    left: -150px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.25);
+    transform: translate(var(--x), var(--y));
+}

@@ -1,0 +1,65 @@
+<!--   google search = vanilla tillt js 
+     website = micku7zu.github.io     -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="contaner">
+        <div class="card">
+            <div class="contant">
+                <h2>01</h2>
+                <h3>card One</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque fugit corrupti maxime praesentium eveniet labore earum vel natus explicabo incidunt, at laborum ipsa cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    A eius harum repellendus odio aliquid veniam, omnis voluptatibus obcaecati. Expedita quam odio at voluptates?</p>
+                <a href="#">Read  More</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="contant">
+                <h2>02</h2>
+                <h3>card Two</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque fugit corrupti maxime praesentium eveniet labore earum vel natus explicabo incidunt, at laborum ipsa cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    A eius harum repellendus odio aliquid veniam, omnis voluptatibus obcaecati. Expedita quam odio at voluptates?</p>
+                <a href="#">Read  More</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="contant">
+                <h2>03</h2>
+                <h3>card Three</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque fugit corrupti maxime praesentium eveniet labore earum vel natus explicabo incidunt, at laborum ipsa cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    A eius harum repellendus odio aliquid veniam, omnis voluptatibus obcaecati. Expedita quam odio at voluptates?</p>
+                <a href="#">Read  More</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".card"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 1,
+            gyroscope: true
+        });
+
+        //It also supports NodeList
+        VanillaTilt.init(document.querySelectorAll(".card"));
+    </script>
+
+</body>
+
+</html>

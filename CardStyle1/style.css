@@ -1,0 +1,118 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    /* color: aliceblue; */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #161623;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#f00, #f0f);
+    clip-path: circle(30% at right 70%);
+    z-index: -1;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#2196f3, #e91e63);
+    clip-path: circle(20% at 10% 10%);
+    z-index: -1;
+    /* color: #2196f3; */
+    /* color: #e91e63; */
+}
+
+.contaner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.contaner .card {
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    padding: 10px;
+    overflow: hidden;
+    background: rgba(225, 225, 225, 0.1);
+    box-shadow: 20PX 20PX 50PX rgba(0, 0, 0, 0.5);
+    border-radius: 15PX;
+    border-top: 1px solid rgba(225, 225, 225, 0.5);
+    border-left: 1px solid rgba(225, 225, 225, 0.5);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blure(5px);
+}
+
+.contaner .card .contant {
+    /* padding: 40px; */
+    color: white;
+    text-align: center;
+    transition: 0.5s;
+    /*translateY(100px)*/
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+/* .contaner .card .contant:hover {
+    transform: translateY(0px);
+    opacity: 1;
+} */
+
+.contaner .card .contant h2 {
+    position: absolute;
+    top: -80px;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(225, 225, 225, 0.5);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.contaner .card .contant h3 {
+    font-size: 1.8em;
+    font-weight: 800;
+    padding-bottom: 5px;
+}
+
+.contaner .card .contant p {
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.contaner .card .contant a {
+    display: inline-block;
+    position: relative;
+    padding: 10px 20px;
+    margin: 20px;
+    /* border: 2px solid black; */
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}

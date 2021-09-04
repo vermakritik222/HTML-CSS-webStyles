@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.img {
+    background: url('wallpaperflare.com_wallpaper\ \(1\).jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -2;
+}
+
+.main {
+    /* background: #000; */
+    height: 100vh;
+    animation: bg 3.5s 1;
+}
+
+.contaner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 100;
+}
+
+.text {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#text1 {
+    font-size: 2.5em;
+    font-weight: 800;
+    /* background: #000; */
+    letter-spacing: 7px;
+    margin-bottom: 20px;
+    position: relative;
+    animation: text 2.5s 1;
+}
+
+#text2 {
+    letter-spacing: 1.5px;
+    color: #6ab04c;
+    font-size: 2em;
+}
+
+@keyframes text {
+    0% {
+        background: #000;
+        color: #000;
+        margin-bottom: -40px;
+    }
+    30% {
+        background: #000;
+        letter-spacing: 20px;
+        margin-bottom: -40px;
+    }
+    85% {
+        background: #000;
+        letter-spacing: 5px;
+        margin-bottom: -40px;
+    }
+}
+
+@keyframes bg {
+    0% {
+        background: rgb(0, 0, 0);
+    }
+    65% {
+        background: rgba(0, 0, 0, 0.932);
+    }
+    67% {
+        background: rgba(0, 0, 0, 0.832);
+    }
+    69% {
+        background: rgba(0, 0, 0, 0.732);
+    }
+    70% {
+        background: rgba(0, 0, 0, 0.632);
+    }
+    72% {
+        background: rgba(0, 0, 0, 0.532);
+    }
+    73.5% {
+        background: rgba(0, 0, 0, 0.404);
+    }
+    75% {
+        background: rgba(0, 0, 0, 0.304);
+    }
+    76.5% {
+        background: rgba(0, 0, 0, 0.204);
+    }
+    100% {
+        background: rgba(0, 0, 0, 0);
+    }
+}

@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    /*add linear gradent */
+    background: linear-gradient(#2b1055, #7597be);
+    overflow-x: hidden;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 50px 25px 50px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 1000;
+}
+
+.nav {
+    position: relative;
+    right: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+}
+
+.item {
+    margin-right: 10px;
+}
+
+.item a {
+    color: #fff;
+    border-radius: 24px;
+    padding: 8px 18px 8px 18px;
+    font-size: 1em;
+    font-weight: 350;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.item a:hover {
+    color: #2b1055;
+    background: #fff;
+}
+
+.active {
+    color: #2b1055 !important;
+    background: #fff;
+}
+
+.bars {
+    display: none;
+}
+
+section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    padding: 100px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* pointer-events: none; */
+}
+
+section::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    /*mehod to add linear gread*/
+    background: linear-gradient(to top, #1c0522, transparent);
+    z-index: 1000;
+    /* removers poimter's event  */
+    pointer-events: none;
+}
+
+.section_inner_elementa {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    /* fit imgies tag opf html*/
+    object-fit: cover;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+#moon {
+    /* blend the image with backgroung*/
+    mix-blend-mode: screen;
+}
+
+#moountians_front {
+    z-index: 10;
+}
+
+#moon_txt {
+    position: absolute;
+    right: -290px;
+    color: #faf3eb;
+    font-size: 6.5em;
+    white-space: nowrap;
+    text-transform: uppercase;
+    z-index: 9;
+}
+
+.btn {
+    position: absolute;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #1c0522;
+    background: #fff;
+    padding: 10px 40px 10px 40px;
+    border-radius: 24px;
+    font-weight: 700;
+    font-size: 1.1em;
+    transform: translateY(100px);
+}
+
+.btn:hover {
+    color: #7597be;
+    /* background: #2b1055; */
+}
+
+
+/* .sec::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to , #2b1055, transparent);
+    z-index: 1000;
+} */
+
+.sec {
+    position: relative;
+    padding: 100px 100px;
+    background: #1c0522;
+}
+
+.sec h1 {
+    padding: 0px 0px 15px 30px;
+    font-size: 2.5rem;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.sec p {
+    font-size: 1.1rem;
+    color: #7597be;
+}
+
+@media (min-width:999px) and (max-width:1299px) {
+    #moon_txt {
+        right: -500px;
+    }
+}

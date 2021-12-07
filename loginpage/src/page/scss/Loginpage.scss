@@ -1,0 +1,144 @@
+@import "../../util/style/variables";
+
+.loginpage {
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 40rem;
+    min-height: 17rem;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    background: $color-box-bg;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.1), inset -5px -5px 5px rgba(70, 70, 70, 0.2),
+        inset 5px 5px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.form_div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & h1 {
+        letter-spacing: 4px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 14;
+        margin-top: 10px;
+        margin-bottom: 18px;
+    }
+
+    & input[type="text"],
+    & input[type="password"] {
+        border: 0;
+        letter-spacing: 1.5px;
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: 20px auto 0px auto;
+        width: 45%;
+        background: none;
+        border: 2px solid $color-input-primary;
+        color: white;
+        border-radius: 20px;
+        outline: none;
+        transition: width 2s;
+    }
+    & input[type="password"] {
+        letter-spacing: 4px;
+    }
+
+    & input[type="text"]:focus,
+    & input[type="password"]:focus {
+        width: 60%;
+        border-color: $color-input-Secondary;
+    }
+
+    & input[type="text"]:hover,
+    & input[type="password"]:hover {
+        width: 60%;
+        border-color: $color-input-Secondary;
+    }
+
+    & input[type="submit"] {
+        border: 0;
+        display: block;
+        text-align: center;
+        padding: 9px 25px;
+        margin: 35px auto 10px auto;
+        background: none;
+        width: 30%;
+        border: 2px solid $color-btn;
+        color: white;
+        font-weight: 700;
+        letter-spacing: 1px;
+        border-radius: 20px;
+        outline: none;
+        transition: background-color 1s;
+        cursor: pointer;
+    }
+    & input[type="submit"]:hover {
+        background-color: $color-btn;
+        color: black;
+    }
+}
+
+@media only screen and(max-width:$width-mobile-1) {
+    .box {
+        min-width: 80%;
+        min-height: 37%;
+
+        & input[type="text"],
+        & input[type="password"] {
+            width: 60%;
+        }
+
+        & input[type="text"]:focus,
+        & input[type="password"]:focus {
+            width: 70%;
+        }
+
+        & input[type="text"]:hover,
+        & input[type="password"]:hover {
+            width: 70%;
+        }
+        & input[type="submit"] {
+            width: 40%;
+        }
+    }
+}
+@media only screen and(max-width:$width-mobile-2) {
+    .box {
+        padding: 30px 20px;
+        & input[type="text"],
+        & input[type="password"] {
+            margin: 20px 0 0 0;
+            width: 85%;
+        }
+
+        & input[type="text"]:focus,
+        & input[type="password"]:focus {
+            width: 90%;
+        }
+
+        & input[type="text"]:hover,
+        & input[type="password"]:hover {
+            width: 90%;
+        }
+    }
+}

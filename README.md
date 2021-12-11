@@ -14,3 +14,6 @@
 
 ### Text_Animation_2
 <image src="/ScreenShots/Screenshot 3.png"/>
+
+### profile_card
+<image src="/Profile card/Screenshot (618).png"/>

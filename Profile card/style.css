@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: palevioletred;
+  height: 100vh;
+}
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.outTeam {
+  display: flex;
+  flex-wrap: wrap;
+}
+.transparent {
+  background: rgba(255, 255, 255, 0.15) !important;
+  /* border-radius: 16px !important; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.3px);
+  -webkit-backdrop-filter: blur(5.3px);
+}
+.outTeam__card {
+  border-radius: 15px;
+  margin: 15px;
+  background-color: whitesmoke;
+  font-family: sans-serif;
+  text-align: center;
+  min-width: 220px;
+  height: 300px;
+  /* max-width: 200px; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transition: transform 400ms ease-in-out;
+}
+.outTeam__card:hover {
+  transform: scale(1.04);
+}
+.outTeam__cardImg {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 25px auto 20px auto;
+  display: block;
+}
+.outTeam__cardName {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.outTeam__cardTitle {
+  margin-bottom: 20px;
+  margin-top: 5px;
+  font-size: 0.85rem;
+  color: rgba(4, 6, 7, 0.61);
+  text-transform: capitalize;
+}
+.outTeam__cardDetails {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+}
+.outTeam__cardDetails i {
+  cursor: pointer;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: all 0.4s;
+}
+
+.outTeam__cardDetails i:hover {
+  color: #62b0d1;
+  transform: scale(1.2);
+}
+
+/* ////////////////////////////////////////// */
+.card {
+  background-color: whitesmoke;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 270px;
+  height: 270px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.288);
+  border-radius: 23px;
+  position: relative;
+  overflow: hidden;
+}
+.card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.card__mainContent {
+  text-align: center;
+}
+.card__mainContent-name {
+  margin-top: 10px;
+  margin-bottom: 3px;
+  text-transform: capitalize;
+  /* margin-bottom: 5px; */
+  font-size: 1.8rem;
+  font-family: sans-serif;
+}
+.card__mainContent-role {
+  color: rgba(110, 110, 110, 0.555);
+}
+
+.card__arrContent,
+.cardCover__cancel {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: rgb(0, 14, 51);
+  bottom: 0;
+  right: 0;
+  border-radius: 23px 0 23px 0;
+  color: rgb(255, 255, 255);
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transform: all 0.4s;
+}
+
+.card__arrContent i {
+  transform: rotate(45deg);
+}
+
+.active__arr {
+  transform: translate(80%, 80%);
+}
+
+.cardCover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #0f2027;
+  height: 86%;
+  border-radius: 20px;
+  color: white;
+  padding: 40px 0 0 20px;
+  transition: all 400ms;
+}
+
+.cardCover p {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.cardCover .skill div {
+  display: inline-block;
+  border: 2px solid rgba(155, 155, 155, 0.815);
+  padding: 5px 10px;
+  color: rgb(211, 211, 211);
+  font-size: 0.9rem;
+  margin: 4px 15px 4px 0;
+  border-radius: 7px 16px;
+}
+
+.cardCover__icons {
+  font-size: 1.6rem;
+  margin-top: 10px;
+}
+
+.cardCover__icons i {
+  margin-top: 15px;
+  cursor: pointer;
+  color: #cfcfcf;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: all 0.4s;
+}
+
+.cardCover__icons i:hover {
+  color: #62b0d1;
+  transform: scale(1.2);
+}
+
+.cardCover__cancel {
+  background-color: whitesmoke !important;
+}
+.cardCover__cancel > i {
+  color: #0f2027 !important;
+}
+.off {
+  transform: translate(-80%, -80%) rotate(90deg);
+}
+.active {
+  transform: translate(0) rotate(0);
+}

@@ -16,7 +16,7 @@
 <image src="/ScreenShots/Screenshot 3.png"/>
 
 ### Text_Animation_3
-<image src="/Profile card/Screenshot6.png"/>
+<image src="/ScreenShots/Screenshot6.png"/>
 
 ### profile_card
 <image src="/Profile card/Screenshot (618).png"/>

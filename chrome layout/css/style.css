@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  background: #050d14;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body > section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body > section > .sec1 > .timeCover {
+  margin-bottom: 20px;
+}
+
+body > section > .sec1 > .timeCover > .time {
+  font-family: "Dosis", sans-serif;
+  color: white;
+  font-size: 6rem;
+}
+
+body > section > .sec1 > .timeCover > .time .time_span {
+  margin: 0px 10px;
+}
+
+body > section > .sec1 > .timeCover > .day {
+  text-align: right;
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Dosis", sans-serif;
+}
+
+body > section .sec2 {
+  width: 800px;
+}
+
+body > section .sec2 .sec2__cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body > section .sec2 .sec2__cover a .card {
+  margin: 10px;
+  border-radius: 20px;
+  padding: 35px 60px;
+  background: #101a23;
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+}
+
+body > section .sec2 .sec2__cover a .card:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+  background-color: #18222d;
+}
+
+body > section .sec2 .sec2__cover a .card img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 6rem;
+}
+
+.blue {
+  color: #00f3f3;
+}
+
+@media screen and (min-width: 800px) {
+  .sec2 {
+    width: 100vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */

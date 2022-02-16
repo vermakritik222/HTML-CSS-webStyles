@@ -3,6 +3,9 @@
 ### FormStyle1
 <image src="/ScreenShots/Screenshot 1.png"/>
 
+### Chrome Layout
+<image src="/ScreenShots/Screenshot (713).png"/>
+
 ### CardStyle1
 <image src="/ScreenShots/Screenshot 2.png"/>
 

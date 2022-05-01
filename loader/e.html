@@ -1,0 +1,101 @@
+<html>
+  <head>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #progress-spinner {
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+      }
+
+      #middle-circle {
+        position: absolute;
+        border-radius: 50%;
+        height: 80px;
+        width: 80px;
+        background-color: rgb(248, 248, 248);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: large;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      "
+    >
+      <div
+        style="
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <div id="middle-circle"></div>
+        <div id="progress-spinner"></div>
+      </div>
+
+      <div style="margin-top: 30px">
+        <button type="button" id="incbtn">+</button>
+        <button type="button" id="decbtn">-</button>
+      </div>
+    </div>
+
+    <script>
+      var progress = 10;
+
+      document
+        .getElementById("incbtn")
+        .addEventListener("click", incrementProgress);
+      document
+        .getElementById("decbtn")
+        .addEventListener("click", decrementProgress);
+
+      function incrementProgress() {
+        if (progress != 100) {
+          progress = progress + 10;
+          console.log(progress);
+          setProgress();
+        }
+      }
+
+      function decrementProgress() {
+        if (progress != 0) {
+          progress = progress - 10;
+          console.log(progress);
+          setProgress();
+        }
+      }
+
+      function setProgress() {
+        document.getElementById("progress-spinner").style.background =
+          "conic-gradient(rgb(3, 133, 255) " +
+          progress +
+          "%,rgb(242, 242, 242) " +
+          progress +
+          "%)";
+
+        document.getElementById("middle-circle").innerHTML =
+          progress.toString() + "%";
+      }
+
+      window.onload = function () {
+        setProgress();
+      };
+    </script>
+  </body>
+</html>

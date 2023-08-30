@@ -1,0 +1,91 @@
+[
+  {
+    "data": [
+      {
+        "name": "John Doe",
+        "photo": "/img/john_doe.webp",
+        "linkedin": "#",
+        "twitter": "#",
+        "designation": "CEO",
+        "description": "Harvard Business School"
+      },
+      {
+        "name": "Jane Smith",
+        "photo": "/img/pexels-andrea-piacquadio-733872.webp",
+        "linkedin": "#",
+        "twitter": "#",
+        "designation": "CTO",
+        "description": "Stanford University"
+      },
+      {
+        "name": "Michael Johnson",
+        "photo": "/img/pexels-pixabay-415829.webp",
+        "linkedin": "#",
+        "twitter": "#",
+        "designation": "CFO",
+        "description": "IIT Goa"
+      },
+      {
+        "name": "Emily Davis",
+        "photo": "/img/pexels-pixabay.webp",
+        "linkedin": "#",
+        "twitter": "#",
+        "designation": "CMO",
+        "description": "MIT Sloan School of Management"
+      },
+      {
+        "name": "Robert Wilson",
+        "photo": "/img/pexels-pixabay-415829.webp",
+        "linkedin": "#",
+        "twitter": "#",
+        "designation": "COO",
+        "description": "Wharton School, UPenn"
+      },
+      {
+        "name": "Sophia Anderson",
+        "photo": "/img/pexels-andrea-piacquadio-733872.webp",
+        "linkedin": "#",
+        "twitter": "#",
+        "designation": "VP of Sales",
+        "description": "Kellogg School of Management"
+      },
+      {
+        "name": "David Lee",
+        "photo": "/img/pexels-pixabay.webp",
+        "linkedin": "#",
+        "twitter": "#",
+        "designation": "VP of Marketing",
+        "description": "Columbia Business School"
+      },
+      {
+        "name": "Amanda Parker",
+        "photo": "/img/john_doe.webp",
+        "linkedin": "https://www.linkedin.com/in/amandaparker",
+        "twitter": "https://twitter.com/amandaparker",
+        "designation": "VP of Marketing",
+        "description": "Wharton School, UPenn"
+      }
+    ]
+  },
+  {
+    "name": "Mentors & Advisors",
+    "data": [
+      {
+        "name": "Sarah Brown",
+        "photo": "/img/pexels-andrea-piacquadio-733872.webp",
+        "linkedin": "#",
+        "twitter": "#",
+        "designation": "CEO",
+        "description": "Harvard Business School"
+      },
+      {
+        "name": "William Clark",
+        "photo": "/img/pexels-pixabay.webp",
+        "linkedin": "#",
+        "twitter": "#",
+        "designation": "CTO",
+        "description": "Stanford University"
+      }
+    ]
+  }
+]

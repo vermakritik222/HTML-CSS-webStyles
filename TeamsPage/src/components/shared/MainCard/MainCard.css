@@ -1,0 +1,7 @@
+.mainCard{
+    border: 1px solid black;
+    padding: 10px 20px;
+    margin: 7px 10px;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+}

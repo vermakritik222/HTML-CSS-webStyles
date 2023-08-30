@@ -1,0 +1,23 @@
+.mainSec_cardContainer {
+  margin: 20px 0 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.mainSec_heading > h2 {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 2.5rem;
+  margin: 30px 0 10px 0;
+}
+.mainSec_heading > p {
+  padding: 0 20px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.mainSec_showMore > span {
+  cursor: pointer;
+  color: rgb(15, 15, 156);
+}
+.mainSec_showMore > span:hover {
+  text-decoration: underline;
+  color: rgb(15, 15, 126);
+}

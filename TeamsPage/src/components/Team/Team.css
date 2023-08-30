@@ -1,0 +1,16 @@
+.team_heading>h2{
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 2.2rem;
+}
+.team_cardContainer{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.team_subheading>h2{
+    
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 2rem;
+    
+}

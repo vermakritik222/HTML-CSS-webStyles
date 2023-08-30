@@ -1,5 +1,8 @@
 # HTML-CSS-webStyles
 
+### Teams Page
+<image src="/TeamsPage/screencapture.png"/>
+
 ### FormStyle1
 <image src="/ScreenShots/Screenshot 1.png"/>
 
